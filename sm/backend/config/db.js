@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');module.exports=async()=>{try{const c=await mongoose.connect(process.env.MONGODB_URI);console.log('MongoDB connected: '+c.connection.host)}catch(e){console.error(e.message);process.exit(1)}};

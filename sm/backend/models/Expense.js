@@ -1,0 +1,1 @@
+const m=require('mongoose');module.exports=m.model('Expense',new m.Schema({date:{type:Date,default:Date.now,required:true},amount:{type:Number,default:0,required:true,min:0},category:{type:String,required:true,default:'',trim:true},subcategory:{type:String,default:'',trim:true},notes:{type:String,default:'',trim:true}},{timestamps:true}));
