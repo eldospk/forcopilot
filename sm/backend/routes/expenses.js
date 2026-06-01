@@ -1,1 +1,0 @@
-const e=require('express'),r=e.Router(),c=require('../controllers/expenseController');r.route('/').get(c.getExpenses).post(c.createExpense);r.route('/:id').get(c.getExpense).put(c.updateExpense).delete(c.deleteExpense);module.exports=r;

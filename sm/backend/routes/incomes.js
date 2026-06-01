@@ -1,1 +1,0 @@
-const e=require('express'),r=e.Router(),c=require('../controllers/incomeController');r.route('/').get(c.getIncomes).post(c.createIncome);r.route('/:id').get(c.getIncome).put(c.updateIncome).delete(c.deleteIncome);module.exports=r;
